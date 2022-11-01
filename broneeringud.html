@@ -12,22 +12,55 @@
        <!--Lehe ülal lingid-->
    <div class="header">
      <div class="header-right">
-       <a class="active" href="#home">Avaleht</a>
-       <a href="#contact">Kontakt</a>
+       <a class="active" href="põhifail3.html">Avaleht</a>
+       <a href="#põhifail3.html #kontakt">Kontakt</a>
        <a href="#about">Info</a>
      </div>
+     
 
 <h1>Broneeringud</h1>
-<P>Toitlustuse osas Deltas majas kontakteeruge või täitke online broneering: </P>
+<H2>Toitlustuse osas Deltas majas kontakteeruge või täitke online broneering: </H2>
+
+<!--vorm, mida saab täita-->
+<p>Tärniga tähistatud väljad on kohustuslikud!</p>
 <form>
-    <label for="fname">Ees ja perekonnanimi:</label><br>
-    <input type="text" id="fname" name="fname"><br>
+    <label for="fname">Ees ja perekonnanimi:*</label><br>
+    <input type="text" id="fname" name="fname" required><br>
+    <br>
+    <label for="fname">Kontakt:*</label><br>
+    <input type="text" id="kontakt" name="kontakt" required><br>
+    <br>
+    <label for="kuupäev">Kuupäev:*</label><br>
+    <input type="date" id="Kuupäev" name="kuupäev" required><br>
+    <br>
+    <label for="number">Sööjate arv (20-150):*</label><br>
+    <input type="number" id="arv" name="arv" min="20" max="150" required><br>
+    <br>
+
+    <label for="soovid">Erisoovid:</label><br>
+    <input type="checkbox" id="soov1" name="Vegan" value="Vegan">
+    <label for="soov1"> Vegan toit</label><br>
+    <input type="checkbox" id="soov2" name="gluteen" value="gluteen">
+    <label for="soov2"> Gluteenivaba</label><br>
+    <input type="checkbox" id="soov3" name="laktoos" value="laktoos">
+    <label for="soov3">Laktoosivaba</label><br>
+    <BR>
+      <label for="muuinf">Muu info:</label><br>
+      <textarea id="muuinf" name="muuinf" rows="4" cols="50"></textarea><br>
+      
+
+
+    <input type="submit" value="Esita">
+    <input type="reset" value="Tühista">
 
   </form>
+  <img src="https://scontent-hel3-1.xx.fbcdn.net/v/t1.6435-9/120351199_186754406240472_9168085456515587178_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=YXMa_bD5tI4AX_B9um2&_nc_ht=scontent-hel3-1.xx&oh=00_AfCradGbXSkUkJ39lUD13xA70A8akFe-WgFAWqsVNUZyNg&oe=6386D2E6"alt="Pilt söögist"/></a>
 
+<!--info VAJUTATAV!-->
+<!--VÕTTA ÄRA LIKNIDE ALL JOONED STIILIS!-->
 
-   <p>Ramastus OÜ
-    E-mail: delta.kohvik@gmail.com
-    Telefon: +372 5302 8944</p> 
+   <p>Ramastus OÜ<br>
+    E-mail:<a href = "mailto: delta.kohvik@gmail.com"> delta.kohvik@gmail.com</a><BR>
+    Telefon:<a href="tel: +372 5302 8944">+372 5302 8944</a></p> 
 </body>
 </html>
