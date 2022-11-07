@@ -1,10 +1,14 @@
+body {
+    background: url(https://img.freepik.com/premium-vector/white-abstract-background-in-3d-paper-style_23-2148399819.jpg?w=2000);
+    background-size: 100%;
+}
 table {
     border-spacing: 0 10px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
+    margin: auto;
     position: relative;
-    top: -70px;
-    left: 450px;
+    top: 35px;
 }
 th {
     padding: 10px 20px;
@@ -37,22 +41,28 @@ td:nth-child(2) {
 }
 .name {
     font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
+    font-weight: bolder;
     position: relative;
-    top: -70px;
-    left: 850px;
+    top: 0px;
+    left: 400px;
+    color: darkgoldenrod;
+    display: inline-block;
 }
 .end {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     position: relative;
-    top: -70px;
-    left: 1230px;
+    top: 15px;
+    left: 1055px;
+    display: inline-block;
 }
 .fb {
     font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
+    font-weight: bolder;
     position: relative;
-    top: -10px;
-    left: 803px;
+    top: 35px;
+    left: 610px;
+    color: darkgoldenrod;
+    padding: 2px;
+    display: inline-block;
 }
