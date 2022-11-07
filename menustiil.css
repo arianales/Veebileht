@@ -1,0 +1,58 @@
+table {
+    border-spacing: 0 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    position: relative;
+    top: -70px;
+    left: 450px;
+}
+th {
+    padding: 10px 20px;
+    background: tan;
+    color: black;
+    border-right: 2px solid;
+    font-size: 0.9em;
+}
+th:first-child {
+    text-align: left;
+}
+th:last-child {
+    border-right: none;
+}
+td {
+    vertical-align: middle;
+    padding: 10px;
+    font-size: 14px;
+    text-align: left;
+    border-top: 2px solid tan;
+    border-bottom: 2px solid tan;
+    border-right: 2px solid tan;
+}
+td:first-child {
+    border-left: 2px solid tan;
+    border-right: none;
+}
+td:nth-child(2) {
+    text-align: left;
+}
+.name {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    position: relative;
+    top: -70px;
+    left: 850px;
+}
+.end {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    position: relative;
+    top: -70px;
+    left: 1230px;
+}
+.fb {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    position: relative;
+    top: -10px;
+    left: 803px;
+}
