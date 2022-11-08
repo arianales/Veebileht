@@ -89,7 +89,7 @@ td:nth-child(2) {
     font-family: 'Times New Roman', Times, serif;
 }
 .header-right a:hover {
-    background-color: azure;
+    background-color: rgb(255, 255, 255);
     color: darkgoldenrod;
 }
 img {
