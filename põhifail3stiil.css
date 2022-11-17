@@ -87,32 +87,72 @@ body {
 }
 .info {
     position: relative;
-    top: -290px;
-    left: 325px;
+    top: -270px;
+    left: 310px;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
-    font-weight: 500;
-    color: darkgoldenrod;
+    font-size: 60px;
+    font-weight: 800;
+    color: rgb(203, 153, 26);
     -webkit-text-stroke-color: rgb(121, 91, 17);
     -webkit-text-stroke-width: 1px;
     display: inline-block;
 }
 .asub {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: 600;
     text-align: center;
     position: relative;
-    top: -315px;
+    top: -310px;
     left: 25px;
+    color: rgb(59, 59, 59);
     display: inline-block;
 }
 .avatud {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    font-weight: 200;
+    font-size: 15px;
+    font-weight: 600;
     text-align: center;
     position: relative;
     top: -300px;
-    left: 150px;
+    left: 170px;
+    color: rgb(59, 59, 59);
+    display: inline-block;
+}
+.kontakt {
+    position: relative;
+    margin-top: -575px;
+    top: 27px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(203, 153, 26);
+    -webkit-text-stroke-color: rgb(121, 91, 17);
+    -webkit-text-stroke-width: 0.8px;
+    display: block;
+}
+.gmail {
+    width: 42px;
+    margin-top: -100px;
+    position: relative;
+    top: -6px;
+    left: 125px;
+}
+.facebook {
+    width: 42px;
+    margin-top: -100px;
+    position: relative;
+    top: -6px;
+    left: 135px;
+}
+.telefon {
+    position: relative;
+    margin-top: -100px;
+    top: -22px;
+    left: 152px;
+    color: rgb(59, 59, 59);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 600;
     display: inline-block;
 }
