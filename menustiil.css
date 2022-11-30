@@ -2,6 +2,16 @@ body {
     background: url(https://img.freepik.com/premium-vector/white-abstract-background-in-3d-paper-style_23-2148399819.jpg?w=2000);
     background-size: 100%;
 }
+.html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.header {
+    position: sticky;
+    top: 0;
+    z-index:99999999
+}
 table {
     border-spacing: 0 10px;
     font-family: 'Times New Roman', Times, serif;

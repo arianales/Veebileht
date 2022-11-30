@@ -2,6 +2,16 @@ body {
     background: url(https://img.freepik.com/premium-vector/white-abstract-background-in-3d-paper-style_23-2148399819.jpg?w=2000);
     background-size: 100%;
 }
+.html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.header {
+    position: sticky;
+    top: 0;
+    z-index:99999999
+}
 #header-right {
     background-image: url(https://visittartu.com/sites/default/files/Delta_ManaKasik.jpg);
     overflow: hidden;
@@ -12,11 +22,12 @@ body {
 }
 #header-right a {
     float: left;
-    color: black;
+    color: rgb(39, 38, 38);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: larger;
+    font-weight: 600;
     font-family: 'Times New Roman', Times, serif;
 }
 #header-right a:hover {
