@@ -1,0 +1,130 @@
+/*header algab*/
+body {
+  background: url(https://img.freepik.com/premium-vector/white-abstract-background-in-3d-paper-style_23-2148399819.jpg?w=2000);
+  background-size: 100%;
+  min-height: 100vh;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+.header {
+  position: sticky;
+  top: 0;
+  z-index:99999999;
+}
+#header-right {
+  background-image: url(https://visittartu.com/sites/default/files/Delta_ManaKasik.jpg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+#header-right a {
+  float: left;
+  color: rgb(39, 38, 38);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: larger;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+}
+#header-right a:hover {
+  background-color: rgb(255, 255, 255);
+  color: darkgoldenrod;
+}
+.pilt {
+  width: 90px;
+}
+/*header lõppeb*/
+/*KONTAKTIDE STIIL*/
+.kontakt {
+  position: relative;
+  margin-top: -575px;
+  top: 600px;
+  font-family: 'Arial', 'Verdana';
+  font-size: 25px;
+  font-weight: 500;
+  color: rgb(203, 153, 26);
+  -webkit-text-stroke-color: rgb(121, 91, 17);
+  -webkit-text-stroke-width: 0.8px;
+  display: block;
+}
+.gmail {
+  width: 42px;
+  position: relative;
+  margin-top: -575px;
+  top: 565px;
+  left: 125px;
+}
+.facebook {
+  width: 42px;
+  position: relative;
+  margin-top: -575px;
+  top: 565px;
+  left: 135px;
+}
+.telefon {
+  position: relative;
+  margin-top: -575px;
+  top: 550px;
+  left: 152px;
+  color: rgb(59, 59, 59);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-block;
+}
+div.form {
+  display: block;
+  text-align: center;
+}
+form {
+  display: inline-block;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+h1 {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(203, 153, 26);
+  -webkit-text-stroke-color: rgb(121, 91, 17);
+  -webkit-text-stroke-width: 1px;
+}
+.nimi {
+  font-weight: 600;
+  color: rgb(59, 59, 59);
+}
+.post {
+  font-weight: 600;
+  color: rgb(59, 59, 59);
+}
+.teema {
+  font-weight: 600;
+  color: rgb(59, 59, 59);
+}
+.sõnum {
+  font-weight: 600;
+  color: rgb(59, 59, 59);
+}
