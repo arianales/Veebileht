@@ -45,11 +45,11 @@
         <!--vorm, mida saab täita-->
         <!--kaldkirja!-->
         <p><i>Tärniga tähistatud väljad on kohustuslikud!</i></p>
-        <form action="https://formsubmit.co/your@email.com" method="POST" class="form">
+        <form method="post" action="broneeringud_email.php">
             <label for="fname">Ees ja perekonnanimi:*</label><br>
             <input type="text" id="fname" name="fname" required><br>
             <br>
-            <label for="fname">Kontakt:*</label><br>
+            <label for="kontakt">Kontakt:*</label><br>
             <input type="text" id="kontakt" name="kontakt" required><br>
             <br>
             <label for="kuupäev">Kuupäev:*</label><br>
@@ -80,15 +80,7 @@
               
         
             <input type="submit" value="Saada">
-            <input type="reset" value="Tühista">
 
-            <button onclick="myFunction()">Saada</button>
-            <p id="demo"></p>
-            <script>
-              function myFunction() {
-                document.getElementById("demo").innerHTML = "Vorm saadetud! Teiega võetakse peagi ühendust! ";
-              }
-            </script>
 
           </form>        
             </div>
