@@ -1,27 +1,22 @@
-/*header algab*/
-html {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-  }
-  
-  body {
+body {
+    background: url(https://img.freepik.com/premium-vector/white-abstract-background-in-3d-paper-style_23-2148399819.jpg?w=2000);
+    background-size: 100%;
     min-height: 100vh;
-    font-family: 'Arial', 'Verdana';
+    font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-  }
-  body nav {
+}
+.html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+/*header algab*/
+.header {
     position: sticky;
     top: 0;
-    z-index: 1;
-  }
-  .header {
-    position: sticky;
-    top: 0;
-    z-index:99999999
+    z-index:99999999;
 }
 #header-right {
     background-image: url(https://visittartu.com/sites/default/files/Delta_ManaKasik.jpg);
@@ -49,19 +44,12 @@ html {
     width: 90px;
 }
 /*header lõppeb*/
-
-
-/*BACKROUND TAUSTAPILT STIIL*/
- body {
-    background: url(https://img.freepik.com/premium-vector/white-abstract-background-in-3d-paper-style_23-2148399819.jpg?w=2000);
-    background-size: 100%;
-}
-
 /*BRONN teksti- STIIL*/
 .bronn {
     color: rgb(203, 153, 26);
+    -webkit-text-stroke-color: rgb(121, 91, 17);
+    -webkit-text-stroke-width: 1px;
 }
-
 /*MUUTUVATE SLAIDIDE STIIL*/
 .slides {
     display: none;
@@ -75,6 +63,8 @@ html {
 .slideshow {
     max-width: 100%;
     position: relative;
+    top: 40px;
+    left: -80px;
     margin: auto;
     text-align: center;
 }
@@ -94,32 +84,27 @@ html {
 }
 
 /* ET SLAID JA FORMS OLEKS KÕRVUTI */
-* {
-    box-sizing: border-box;
-  }
-  
-  /* Create two equal columns that floats next to each other */
-  .column {
+* {box-sizing: border-box;}
+/* Create two equal columns that floats next to each other */
+.column {
     float: left;
     width: 50%;
     padding: 10px;
     height: 300px; /* Should be removed. Only for demonstration */
-  }
+}
   
-  /* Clear floats after the columns */
-  .row:after {
+/* Clear floats after the columns */
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
-  
+}
   /*KONTAKTIDE STIIL*/
-
-  .kontakt {
+.kontakt {
     position: relative;
     margin-top: -575px;
     top: 1000px;
-    font-family: 'Arial', 'Verdana';
+    font-family: 'Times New Roman', Times, serif;
     font-size: 25px;
     font-weight: 500;
     color: rgb(203, 153, 26);
@@ -151,4 +136,14 @@ html {
     font-size: 16px;
     font-weight: 600;
     display: inline-block;
+}
+.varv {
+    font-weight: 600;
+    color: rgb(59, 59, 59);
+}
+H3 {
+    color: rgb(59, 59, 59);
+}
+p {
+    color: rgb(59, 59, 59);
 }
