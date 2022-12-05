@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta kohvik</title>
+    <!--väike logo-->
+    <link rel="icon" href="https://scontent-hel3-1.xx.fbcdn.net/v/t39.30808-6/301893258_569998764916381_3356432294098814186_n.png?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=-KT9mG99BNMAX-f-GMd&_nc_ht=scontent-hel3-1.xx&oh=00_AfBw8PE3PfY33w72QkjpNJBmSdusgF2uqhKiXd3NPCn59Q&oe=63829693">
+    <link rel="stylesheet" type="text/css" href="põhifail3stiil.css">
+  </head>
+<body>
+  <!--Lehe ülal lingid-->
+  <div class="header">
+   <div id="header-right">
+     <a class="logo" href="põhifail3.html"> <img class="pilt" src="data:image/png;base64,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" alt="Delta logo"/></a>
+     <a class="active" href="põhifail3.html">Avaleht</a>
+     <a class="about" href="#about">Info</a>
+     <a href="menu.html">Menüü</a>
+     <a href="broneeringud.html">Broneerimine</a>
+     <a href="uusform.html">Kontakt</a>
+   </div>
+  </div>  
+  <br>  
+  <!--pildid slideshow jaoks-->
+  <div class="slideshow">
+   <div class="slides">
+      <img class="pilt1 fade" src="https://delta.ut.ee/wp-content/uploads/2020/02/Delta_kohvik.jpg" alt="Delta kohviku pilt 2">
+   </div>
+   <div class="slides">
+      <img class="pilt1 fade" src="https://scontent-waw1-1.xx.fbcdn.net/v/t1.6435-9/120370981_186754659573780_1443972698115749813_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=g41_p_r36nkAX8FM1DN&_nc_ht=scontent-waw1-1.xx&oh=00_AfAhY3HJABzYm_xvmVJKa7VWucCeTCRU1oIiXxuyIccTjA&oe=63972C46" alt="Delta kohviku pilt 3">
+   </div>
+    <div class="slides">
+      <img class="pilt1 fade" src="https://scontent-waw1-1.xx.fbcdn.net/v/t1.6435-9/120351199_186754406240472_9168085456515587178_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=dduXCIdmJbIAX_HELdA&_nc_oc=AQmJ5kfVRTHqJxOyOZv9nE_Z9CL5pMmosU1grkSzbOhkNRZxt_-r0P-CDaYl6luAIpQ&_nc_ht=scontent-waw1-1.xx&oh=00_AfA5HgVdFzRqCE4RzgbGHxF_yOyS0mj9pEITRHYN8-ke0Q&oe=63974DA6" alt="Delta kohviku pilt 4">
+    </div>
+    <div class="slides">
+      <img class="pilt1 fade" src="https://scontent-waw1-1.xx.fbcdn.net/v/t1.6435-9/84922136_100751084840805_1678114340399480832_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=cdbe9c&_nc_ohc=eZJZEchK1kIAX-Nc1HP&_nc_ht=scontent-waw1-1.xx&oh=00_AfAsbok36kgBpKhccf8et-53YJ2ExKsLpBmGKBGy-Af3XQ&oe=63974346" alt="Delta kohviku pilt 5">
+    </div>
+  </div>
+  <!--slideshow kood-->
+  <script>
+    var slideindex = 0;
+    showslides();
+
+    function showslides() {
+      var i;
+      var slides = document.getElementsByClassName('slides');
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+      }
+      slideindex++;
+      if (slideindex > slides.length) {slideindex = 1};
+      slides[slideindex-1].style.display = 'block';
+      setTimeout(showslides, 3500); //pildi vahetamise aeg
+    }
+  </script>
+  <!--nimi-->
+  <h1 class="delta">Delta kohvik</h1>
+  <!--tekst-->
+  <A id="about"></A>
+  <p class="info">
+    Info:
+  </p>
+  <br>
+  <p class="asub">
+    Asub: Narva maantee 18, Tartu, Estonia, 51009
+    <br>
+    <br>
+    <br>
+    Suvel on avatud ka väliterrass, kust avanevad kaunid vaated Emajõele ning rohelust täis parkidele.
+    <br>
+    Treppidel, kus on mõnus ka niisama istuda ning Emajõge jälgida, toimub suve jooksul ka mitmeid kontserte.
+  </p>
+  <br>
+  <p class="avatud">
+    Delta kohvik on avatud esmaspäevast reedeni kell 11.00 – 17.00.
+  </p>
+  <div class="kaart">
+    <div class="lõuend">
+      <iframe class="raam" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=deltakohvik&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+    </div>
+  </div>
+  <p class="kontakt">
+    Kontaktid:
+  </p>
+  <!--logod-->
+  <div id="kontaktid">
+    <a class="mail" href="uusform.html"><img class="gmail" src="https://abrakadabra.fun/uploads/posts/2021-12/thumbs/1639603789_62-abrakadabra-fun-p-pochta-ikonka-66.png" alt="mail pilt"/></a>
+    <a class="social" href="https://www.facebook.com/DeltaKohvik/"><img class="facebook" src="https://img.icons8.com/ios/500/facebook-new.png" alt="facebook leht"/></a>
+    <p class="telefon">Telefon: +372 5302 8944</p>
+  </div>
+</body>
+</html>

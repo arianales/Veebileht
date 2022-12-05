@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Delta kohviku veebileht">
+  <meta name="keywords" content="Delta kohviku veebileht">
+  <title>Delta kohvik - Menu</title>
+  <!--väike logo-->
+  <link rel="icon" href="https://scontent-hel3-1.xx.fbcdn.net/v/t39.30808-6/301893258_569998764916381_3356432294098814186_n.png?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=-KT9mG99BNMAX-f-GMd&_nc_ht=scontent-hel3-1.xx&oh=00_AfBw8PE3PfY33w72QkjpNJBmSdusgF2uqhKiXd3NPCn59Q&oe=63829693">
+  <link rel="stylesheet" type="text/css" href="menustiil.css">
+</head>
+<body>
+  <!--Lehe ülal lingid-->
+  <div class="header">
+    <div id="header-right">
+      <a class="logo" href="põhifail3.html"> <img class="pilt" src="data:image/png;base64,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" alt="Delta logo"/></a>
+      <a class="active" href="põhifail3.html">Avaleht</a>
+      <a class="about" href="põhifail3.html#about">Info</a>
+      <a href="menu.html">Menüü</a>
+      <a href="broneeringud.html">Broneerimine</a>
+      <a href="uusform.html">Kontakt</a>
+    </div>
+  </div>
+ <br>
+ <div class="fb">
+   <a href="https://www.facebook.com/DeltaKohvik/">Kliki siia ja vaata meie päevamenüüd</a>
+ </div>
+ <p class="name">MEIE SUVEMENÜÜ</p>
+ <br>
+ <!--Menüütabelid hindadega-->
+  <table>
+    <tr>
+        <th>Eelroad</th>
+        <th>Hind</th>
+    </tr>
+    <tr>
+        <td>Bataadifriikartulid laimimajoneesiga (G)*</td>
+        <td>3,90€</td>
+    </tr>
+    <tr>
+        <td>Kalmaarirõngad tartarkastmega</td>
+        <td>3,50€</td>
+    </tr>
+    <tr>
+        <td>Käsitsi valmistatud küüslaugused juustupallid magus-tšillikastmega</td>
+        <td>3,90€</td>
+    </tr>
+    <tr>
+        <td>Vürtsikad kanatiivad sinihallitusjuustukastmega (G)*</td>
+        <td>4,20€</td>
+    </tr>
+    <tr>
+        <td>Õlle kõrvale 2-le</td>
+        <td>10€</td>
+    </tr>
+    <tr>
+      <td>Õlle kõrvale 2-le
+        <br>
+        (kanavardad, sibularõngad, praetud pelmeenid, küüslauguleivad, marineeritud šampinjonid, hapukurk, marineeritud sibul, küüslaugukaste)
+      </td>
+      <td>10€</td>
+    </tr>
+    <tr>
+      <td>Veini kõrvale 2-le
+        <br>
+        (juustuvalik, murakamoos, Prosciutto, vinnutatud vorst, ciabatta, kreekerid, oliivid, viinamarjad)
+      </td>
+      <td>15€</td>
+    </tr>
+    <tr>
+      <th>Salatid ja supid</th>
+      <th>Hind</th>
+     </tr>
+    <tr>
+      <td>Krõbekanasalat</td>
+      <td>5€</td>
+    </tr>
+    <tr>
+      <td>Avokaadosalat (V, G, L)*</td>
+      <td>5€</td>
+    </tr>
+    <tr>
+      <td>Seljanka (L)*</td>
+      <td>3€</td>
+    </tr>
+    <tr>
+     <td>Krevetisalat (G)*</td>
+     <td>5€</td>
+    </tr>
+    <tr>
+     <td>Lõhesalat (G)*</td>
+     <td>5€</td>
+    </tr>
+   <tr>
+     <th>Pearoad</th>
+     <th>Hind</th>
+   </tr>
+   <tr>
+     <td>Pestone kanapasta</td>
+     <td>6€</td>
+   </tr>
+   <tr>
+     <td>Caesar'i kanaburger friikartuliga</td>
+     <td>6€</td>
+   </tr>
+   <tr>
+     <td>Veiselihaburger marineeritud punase sibula ja friikartuliga</td>
+     <td>7€</td>
+   </tr>
+   <tr>
+     <td>Seesamiseemne paneeringus seasisefilee saksa salati ja tšillimajoneesiga</td>
+     <td>8€</td>
+   </tr>
+   <tr>
+    <td>Pardifilee apelsinikastmeja värske salatiga (L)*</td>
+    <td>9€</td>
+   </tr>
+   <tr>
+     <td>Kohafilee salatipadjal pärlkuskussiga</td>
+     <td>10€</td>
+   </tr>
+   <tr>
+     <th>Lastele</th>
+     <th>Hind</th>
+   </tr>
+   <tr>
+     <td>Jäätisekokteil (G)*</td>
+     <td>2,50€</td>
+   </tr>
+   <tr>
+     <td>Pasta singi ja juustuga</td>
+     <td>3,50€</td>
+   </tr>
+   <tr>
+     <td>Friikartulid viineritega (G)*</td>
+     <td>3,50€</td>
+   </tr>
+   <tr>
+     <td>Pannkoogid värske maasikatoormoosi või jäätisega</td>
+     <td>4€</td>
+   </tr>
+   <tr>
+    <th colspan="2">JOOGID</th>
+   </tr>
+   <tr>
+     <th>Külmad joogid</th>
+     <th>Hind / cl</th>
+   </tr>
+   <tr>
+    <td>Aura vesi</td>
+    <td>1,50€ / 50cl</td>
+   </tr>
+   <tr>
+     <td>Maitsevesi</td>
+     <td>1,50€ / 100cl</td>
+   </tr>
+   <tr>
+     <td>Mahl</td>
+     <td>1,50€ / 25cl</td>
+   </tr>
+   <tr>
+     <td>Piim</td>
+     <td>1,50€ / 25cl</td>
+   </tr>
+   <tr>
+     <td>Coca Cola, Fanta, Sprite, Fuzetea</td>
+     <td>2€ / 50cl</td>
+   </tr>
+   <tr>
+     <td>Tume kali</td>
+     <td>2,50€ / 40cl</td>
+   </tr>
+   <tr>
+     <td>Red Bull</td>
+     <td>2,50€ / 25cl</td>
+   </tr>
+   <tr>
+     <td>Vitamin Well  Zero</td>
+     <td>2,50€ / 35,5cl</td>
+   </tr>
+   <tr>
+     <td>Vitamin Well</td>
+     <td>2,50€ / 50cl</td>
+   </tr>
+   <tr>
+     <td>Nocco</td>
+     <td>2,90€ / 33cl</td>
+   </tr>
+   <tr>
+     <th>Kuumad joogid</th>
+     <th>Hind</th>
+   </tr>
+   <tr>
+     <td>Kohv väike</td>
+     <td>1,90€</td>
+   </tr>
+   <tr>
+     <td>Kohv suur</td>
+     <td>2,50€</td>
+   </tr>
+   <tr>
+     <td>Espresso</td>
+     <td>1,80€</td>
+   </tr>
+   <tr>
+     <td>Topelt espresso</td>
+    <td>2,50€</td>
+   </tr>
+   <tr>
+     <td>Cappuccino</td>
+     <td>2,30€</td>
+   </tr>
+   <tr>
+     <td>Cafe Latte</td>
+     <td>2,50€</td>
+   </tr>
+   <tr>
+     <td>Tee</td>
+     <td>1,90€</td>
+   </tr>
+   <tr>
+     <td>Tee kannuga</td>
+     <td>3€</td>
+   </tr>
+   <tr>
+     <th>Õlled ja Siidrid</th>
+     <th>Hind / cl</th>
+   </tr>
+   <tr>
+     <td>Vaadiõlu A. Le Coq Premium</td>
+     <td>2€ / 33cl
+      <br>
+      3€ / 50cl
+     </td>
+   </tr>
+   <tr>
+     <td>Vaadisiider Hoggy's</td>
+     <td>2€ / 33cl
+      <br>
+      3€ / 50cl
+     </td>
+   </tr>
+   <tr>
+     <td>Hoggys</td>
+     <td>3€ / 33cl</td>
+   </tr>
+   <tr>
+     <td>Happy Joe (alkoholivaba0</td>
+     <td>3€ / 27,5cl</td>
+   </tr>
+   <tr>
+     <td>A. Le Coq Nippel</td>
+     <td>2€ / 25cl</td>
+   </tr>
+   <tr>
+     <td>A. Le Coq Alexander</td>
+     <td>3,50€ / 50cl</td>
+   </tr>
+   <tr>
+     <td>A. Le Coq Premium</td>
+     <td>3,50€ / 50cl</td>
+   </tr>
+   <tr>
+      <td>A. Le Coq Porter</td>
+      <td>3,50€ / 50cl</td>
+  </tr>
+  <tr>
+     <td>A. Le Coq Premium (alkoholivaba)</td>
+     <td>3€ / 50cl</td>
+   </tr>
+   <tr>
+     <td>Corona Extra</td>
+     <td>3,50€ / 35,5cl</td>
+   </tr>
+   <tr>
+     <td>Starõi Melnik</td>
+     <td>3,50€ / 50cl</td>
+   </tr>
+   <tr>
+     <td>Starõi Melnik (alkoholivaba)</td>
+     <td>3,50€ / 50cl</td>
+   </tr>
+   <tr>
+     <th>Valged veinid</th>
+     <th>Hind / cl</th>
+   </tr>
+   <tr>
+     <td>Sauvignon, Les Petites Arcades (Prantsusmaa) 12%</td>
+     <td>5,90€ / 25cl</td>
+   </tr>
+   <tr>
+     <td>Pinot Grigio "Capitolo 06." (Itaalia) 12%</td>
+     <td>4,50€ / 16cl
+      <br>
+      19€ / 75cl
+     </td>
+   </tr>
+   <tr>
+     <td>Jean-Marc Brocard Chablis (Prantsusmaa) 12,5%</td>
+     <td>32€ / 75cl</td>
+   </tr>
+   <tr>
+     <th>Roosa vein</th>
+     <th>Hind / cl</th>
+   </tr>
+   <tr>
+      <td>Grenache Rose, Les Petites Arcades (Prantsusmaa) 12%</td>
+      <td>5,90€ / 25cl</td>
+  </tr>
+  <tr>
+     <td>Conde Villar Vinho Verde Rose (Portugal) 11,5%</td>
+     <td>4,50€ / 16cl
+      <br>
+      21€ / 75cl
+     </td>
+   </tr>
+   <tr>
+     <td>Pasqua 11 Minutes Rose (Itaalia) 12,5%</td>
+     <td>24€ / 75cl</td>
+   </tr>
+   <tr>
+     <th>Punased veinid</th>
+     <th>Hind / cl</th>
+   </tr>
+   <tr>
+     <td>Merlot, Les Petites Arcades (Prantsusmaa) 13%</td>
+     <td>5,90€ / 25cl</td>
+   </tr>
+   <tr>
+     <td>Vinha Maria Tinto (Portugal) 12,5%</td>
+     <td>4,50€ / 16cl
+      <br>
+      16€ / 75cl
+     </td>
+   </tr>
+   <tr>
+     <td>Passimento, Rosso (Romeo & Juliet) (Itaalia) 14%</td>
+     <td>22€ / 75cl</td>
+   </tr>
+   <tr>
+     <td>Barone Ricasoli Chianti (Itaalia) 13%</td>
+     <td>24€ / 75cl</td>
+   </tr>
+   <tr>
+     <th>Vahuveinid</th>
+     <th>Hind / cl</th>
+   </tr>
+   <tr>
+     <td>Cava Amador Brut (Hispaania) 11,5%</td>
+     <td>4,50€ / 16cl
+      <br>
+      19€ / 75cl
+     </td>
+   </tr>
+   <tr>
+     <td>Maschio Prosecco Spumante Extra Dry (Itaalia) 11%</td>
+     <td>22€ / 75cl</td>
+   </tr>
+   <tr>
+     <th>Kange alkohol</th>
+     <th>Hind / cl</th>
+   </tr>
+   <tr>
+     <td>Russian Standart</td>
+     <td>3,50€ / 4cl</td>
+   </tr>
+   <tr>
+     <td>Captain Morgan Rum</td>
+     <td>2,90€ / 4cl</td>
+   </tr>
+   <tr>
+     <td>Bombay Sapphire Dry Gin</td>
+     <td>3,90€ / 4cl</td>
+   </tr>
+   <tr>
+     <td>ST. Remy VSOP</td>
+     <td>3,90€ / 4cl</td>
+   </tr>
+   <tr>
+     <td>Remy Martin VSOP</td>
+     <td>5,90€ / 4cl</td>
+   </tr>
+   <tr>
+     <th>Kokteilid</th>
+     <th>Hind</th>
+   </tr>
+   <tr>
+     <td>Gin & Tonic</td>
+     <td>6€</td>
+   </tr>
+   <tr>
+     <td>Rum & Cola</td>
+     <td>5€</td>
+   </tr>
+   <tr>
+     <td>Vodka & Juice</td>
+     <td>5€</td>
+   </tr>
+   <tr>
+     <td>Mojito</td>
+     <td>6€</td>
+   </tr>
+   <tr>
+     <td>Aperol Spritz</td>
+     <td>6€</td>
+   </tr>
+   <tr>
+     <td>Campari Spritz</td>
+     <td>6€</td>
+   </tr>
+   <tr>
+     <td>Orange Pina Colada</td>
+     <td>6€</td>
+   </tr>
+   <tr>
+     <td>Minttu-Amarula</td>
+     <td>6€</td>
+   </tr>
+   <tr>
+     <td>Martini Bitter Spritz</td>
+     <td>6€</td>
+   </tr>
+   <tr>
+     <td>Cosmopolitan</td>
+     <td>6€</td>
+   </tr>
+   <tr>
+     <td>Bitter Akvavit</td>
+     <td>6€</td>
+   </tr>
+</table>
+<p class="end">* V - sobilik ka veganitele <br> G - gluteenivaba <br> L - laktoosivaba</p>
+<p class="kontakt">
+  Kontaktid:
+</p>
+<!--logod-->
+<div id="kontaktid">
+  <a class="mail" href="uusform.html"><img class="gmail" src="https://abrakadabra.fun/uploads/posts/2021-12/thumbs/1639603789_62-abrakadabra-fun-p-pochta-ikonka-66.png" alt="mail pilt"/></a>
+  <a class="social" href="https://www.facebook.com/DeltaKohvik/"><img class="facebook" src="https://img.icons8.com/ios/500/facebook-new.png" alt="facebook leht"/></a>
+  <p class="telefon">Telefon: +372 5302 8944</p>
+</div>
+</body>
+</html>

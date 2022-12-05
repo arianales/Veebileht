@@ -1,0 +1,187 @@
+body {
+    background: url(https://img.freepik.com/premium-vector/white-abstract-background-in-3d-paper-style_23-2148399819.jpg?w=2000);
+    background-size: 100%;
+    min-height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+/*header algab*/
+.header {
+    position: sticky;
+    top: 0;
+    z-index:99999999;
+}
+#header-right {
+    background-image: url(https://visittartu.com/sites/default/files/Delta_ManaKasik.jpg);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+#header-right a {
+    float: left;
+    color: rgb(39, 38, 38);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+#header-right a:hover {
+    background-color: rgb(255, 255, 255);
+    color: darkgoldenrod;
+}
+.pilt {
+    width: 90px;
+}
+/*header lõppeb*/
+/* ET SLAID JA FORMS OLEKS KÕRVUTI */
+* {box-sizing: border-box;}
+/*MUUTUVATE SLAIDIDE STIIL*/
+.slides {
+    display: none;
+}
+.pilt1 {
+    vertical-align: middle;
+    width: 100%;
+    height: 580px;
+    object-fit: cover;
+}
+.slideshow {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-direction: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.delta {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 200px;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    top: -535px;
+    color: rgb(241, 240, 240);
+    -webkit-text-stroke-color: rgb(47, 46, 46);
+    -webkit-text-stroke-width: 4px;
+}
+/*kaardi stiil*/
+.kaart {
+    position: relative;
+    left: 750px;
+    top: -650px;
+    text-align: right;
+    width: 700px;
+    height: 500px;
+}
+.lõuend {
+    overflow: hidden;
+    background: none!important;
+    width: 700px;
+    height: 500px;
+}
+.raam {
+    width: 700px!important;
+    height: 500px!important;
+}
+/*INFO STIIL*/
+.info {
+    position: relative;
+    top: -270px;
+    left: 310px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    font-weight: 800;
+    color: rgb(203, 153, 26);
+    -webkit-text-stroke-color: rgb(121, 91, 17);
+    -webkit-text-stroke-width: 1px;
+    display: inline-block;
+}
+.asub {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    top: -310px;
+    left: 25px;
+    color: rgb(59, 59, 59);
+    display: inline-block;
+}
+.avatud {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    top: -300px;
+    left: 170px;
+    color: rgb(59, 59, 59);
+    display: inline-block;
+}
+/*KONTAKTIDE STIIL*/
+.kontakt {
+    position: relative;
+    margin-top: -575px;
+    top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(203, 153, 26);
+    -webkit-text-stroke-color: rgb(121, 91, 17);
+    -webkit-text-stroke-width: 0.8px;
+    display: block;
+}
+.gmail {
+    width: 42px;
+    margin-top: -100px;
+    position: relative;
+    top: 15px;
+    left: 125px;
+}
+.facebook {
+    width: 41px;
+    margin-top: -100px;
+    position: relative;
+    top: 14px;
+    left: 135px;
+}
+.telefon {
+    position: relative;
+    margin-top: -100px;
+    top: -2px;
+    left: 152px;
+    color: rgb(59, 59, 59);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+}
+.raam {
+    border: 0;
+    overflow: auto;
+    margin-top: 0;
+    margin-left: 0;
+}
