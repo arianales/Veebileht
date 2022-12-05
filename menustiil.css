@@ -1,17 +1,50 @@
 body {
     background: url(https://img.freepik.com/premium-vector/white-abstract-background-in-3d-paper-style_23-2148399819.jpg?w=2000);
     background-size: 100%;
+    min-height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .html {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
 }
+/*header algab*/
 .header {
     position: sticky;
     top: 0;
-    z-index:99999999
+    z-index: 99999999;
 }
+.header-right {
+    background-image: url(https://visittartu.com/sites/default/files/Delta_ManaKasik.jpg);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+.header-right a {
+    float: left;
+    color: rgb(39, 38, 38);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+.header-right a:hover {
+    background-color: rgb(255, 255, 255);
+    color: darkgoldenrod;
+}
+img {
+    width: 90px;
+}
+/*header lõppeb*/
+/*Menüütabeli stiil*/
 table {
     border-spacing: 0 10px;
     font-family: 'Times New Roman', Times, serif;
@@ -49,6 +82,7 @@ td:first-child {
 td:nth-child(2) {
     text-align: left;
 }
+/*Menüütabeli stiil lõppeb*/
 .name {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
@@ -63,9 +97,10 @@ td:nth-child(2) {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     position: relative;
-    top: 15px;
-    left: 1055px;
+    top: 25px;
+    left: 1060px;
     display: inline-block;
+    text-align: right;
 }
 .fb {
     font-family: 'Times New Roman', Times, serif;
@@ -81,27 +116,41 @@ td:nth-child(2) {
     color: darkgoldenrod;
     font-weight: bold;
 }
-.header-right {
-    background-image: url(https://visittartu.com/sites/default/files/Delta_ManaKasik.jpg);
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-}
-.header-right a {
-    float: left;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: larger;
+/*KONTAKTIDE STIIL*/
+.kontakt {
+    position: relative;
+    margin-top: -575px;
+    top: 650px;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(203, 153, 26);
+    -webkit-text-stroke-color: rgb(121, 91, 17);
+    -webkit-text-stroke-width: 0.8px;
+    display: block;
 }
-.header-right a:hover {
-    background-color: rgb(255, 255, 255);
-    color: darkgoldenrod;
+.gmail {
+    width: 42px;
+    margin-top: -100px;
+    position: relative;
+    top: 615px;
+    left: 125px;
 }
-img {
-    width: 90px;
+.facebook {
+    width: 41px;
+    margin-top: -100px;
+    position: relative;
+    top: 614px;
+    left: 135px;
+}
+.telefon {
+    position: relative;
+    margin-top: -100px;
+    top: 600px;
+    left: 152px;
+    color: rgb(59, 59, 59);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
 }
